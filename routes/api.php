@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Mural\MuralController;
+use App\Http\Controllers\Message\MessageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('mural', 'App\Http\Controllers\Mural\MuralController@index');
-Route::post('mural', 'App\Http\Controllers\Mural\MuralController@store');
-Route::put('mural/{id}', 'App\Http\Controllers\Mural\MuralController@update');
-Route::delete('mural/{id}', 'App\Http\Controllers\Mural\MuralController@delete');
+Route::get('messages', 'App\Http\Controllers\Message\MessageController@index');
+Route::post('messages', 'App\Http\Controllers\Message\MessageController@store');
+Route::put('messages/{id}', 'App\Http\Controllers\Message\MessageController@update');
+Route::delete('messages/{id}', 'App\Http\Controllers\Message\MessageController@delete');

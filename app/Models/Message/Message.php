@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Models\Mural;
+namespace App\Models\Message;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Mural extends Model
+class Message extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'task',
+        'title',
+        'description',
     ];
 
-    protected $table = 'mural';
+    protected $table = 'messages';
 
     /**
      * The attributes that should be hidden for arrays.
